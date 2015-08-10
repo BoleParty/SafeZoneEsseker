@@ -16,7 +16,7 @@ In case you are using InfiStar in run.sqf change following settings to false:
 /
 *  Use EH_Fired check   */ _EHF = false; /* true or false */ /* Some mods revert the EventHandlers by default and can cause problems with this check. Tested on Epoch and AltisLife.  */
 
-
+In your scripts.txt to allowDamage line add: !"player allowDamage false;" !"player allowDamage true;" and to removeEventHandler line add: !"player removeEventhandler["HandleDamage", _safeZoneDamageEH];"
 
 The safezone.sqf put anywhere into your mission file.
 
