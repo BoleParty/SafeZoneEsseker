@@ -114,7 +114,7 @@ class Markers
 	};
 	
 	Directly after class markers add:
-	
+
 	class Sensors
 	{
 		items=3;
@@ -152,7 +152,26 @@ class Markers
 			{
 			};
 		};
-		
+		class Item2
+		{
+			position[]={5072.6343,164.17076,8901.5186};
+			a=250;
+			b=250;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="northsafezone";
+			expCond="(player distance northsafezone) < 250;";
+			expActiv="hint ""You Entered A Safe Zone! Acts Of War Strictly Forbidden!""; inSafeZone = true;";
+			expDesactiv="hint ""You are leaving the Safe Zone!""; inSafeZone = false;";
+			class Effects
+			{
+			};
+		};
+	};
+	
+
 After your changes you don`t need to encrypt the file again as the server will read the decrypted mission.sqm without any issues.
 
 Regards
