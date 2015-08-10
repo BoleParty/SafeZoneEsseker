@@ -9,9 +9,12 @@ Stock Epoch AntiHack maybe does a cleanup on the player eventhandlers but i was 
 In case you are using InfiStar in run.sqf change following settings to false:
 
 /*  revert allowDamage   */ _RAD = false; /* true or false */ /* if you have safezones using "player allowDamage false;" or similar.. set _RAD = false; */
+
 /*  HandleDamage check   */ _HDC = false; /* true or false */ /* *experimental + Epoch only* - probably publicVariableServer spam but no more godmode hackers. */
+
 /*  Revert HandleDamage  */ _RHD = false; /* true or false */ /* Needs to be  false  for Paintball script */
-/*  Use EH_Fired check   */ _EHF = false; /* true or false */ /* Some mods revert the EventHandlers by default and can cause problems with this check. Tested on Epoch and AltisLife.  */
+/
+*  Use EH_Fired check   */ _EHF = false; /* true or false */ /* Some mods revert the EventHandlers by default and can cause problems with this check. Tested on Epoch and AltisLife.  */
 
 
 
