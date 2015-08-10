@@ -157,4 +157,3 @@ After your changes you don`t need to encrypt the file again as the server will r
 
 Regards
 BoleParty
-		
